@@ -1,12 +1,12 @@
 import React from "react";
 import { Container } from "./styles";
 import { FaRegCommentAlt } from "react-icons/fa";
-import { BsReply } from "react-icons/bs";
+import Ollie from "../../assets/pp.jpeg";
 
 export default function Coment({ text, reply }) {
   return (
     <Container reply={reply}>
-      {!reply ? <FaRegCommentAlt /> : <BsReply />}
+      {!reply ? <FaRegCommentAlt /> : <img src={Ollie} />}
 
       <span>{text}</span>
     </Container>

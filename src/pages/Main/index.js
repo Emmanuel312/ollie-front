@@ -23,6 +23,7 @@ export default function Main() {
         ...questions,
         { msg: response.data.message, reply: true },
       ]);
+      console.log(questions);
     } catch (err) {
       if (err.response.status === 400) {
         setQuestions((questions) => [
@@ -36,10 +37,11 @@ export default function Main() {
   return (
     <Container>
       <Content>
-        <Header>Marketplace x / produto 1</Header>
+        <Header>Marketplace x / produto y</Header>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
+            placeholder="Pergunte ao ollie"
             value={newQuestion}
             onChange={(e) => setNewQuestion(e.target.value)}
           />

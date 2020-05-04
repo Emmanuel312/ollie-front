@@ -23,10 +23,15 @@ export const Content = styled.div`
     input {
       width: 800px;
       height: 50px;
-      border: 1px solid gray;
+      /* border: 1px solid gray; */
       border-radius: 30px;
       margin-right: 10px;
       padding: 0 30px;
+      background: #dcdcdc;
+      ::placeholder {
+        color: gray;
+        font-weight: bold;
+      }
     }
 
     button {
