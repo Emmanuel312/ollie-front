@@ -16,7 +16,7 @@ export default function Main() {
     setQuestions([...questions, { msg: newQuestion, reply: false }]);
 
     try {
-      const body = { product_id: 1, query: newQuestion };
+      const body = { product_id: 42, query: newQuestion };
       setNewQuestion("");
       const response = await api.post("/", body);
       setQuestions((questions) => [

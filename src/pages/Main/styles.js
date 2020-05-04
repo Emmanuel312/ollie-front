@@ -19,7 +19,7 @@ export const Content = styled.div`
   height: 100%;
   width: 95%;
 
-  form {
+  > form {
     input {
       width: 800px;
       height: 50px;
